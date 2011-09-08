@@ -9,13 +9,29 @@ import utils
 proj = '+init=epsg:4326'
 merc = '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over'
 
+# colorado
+box = "-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237"
+
+postgis = {
+    "type":"postgis",
+    "dbname":"osm",
+    "srid":900913,
+    "extent":box,
+    "max_size":33
+}
+
+remote = {
+    "user":"postgres",
+    "host":"linux_db_bm",
+    "srid":3857,
+}
+
+# /benchmarking/wms/2011/data/vector/osm_base_data/data/
+#postgis.update(remote)
+
 ms = mapscript.mapObj('../mapserver/osm-google.map')
 m = mapnik.Map(800,800,merc)
 
-# colorado
-#box = '-12190003.8424,4438914.03058,-11311552.8863,5024548.00134'
-# denver
-box = "-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626"
 m.maximum_extent = mapnik.Box2d(*map(float,box.split(',')))
 # should be background_color
 m.background = utils.ms2color(ms.imagecolor)
@@ -28,12 +44,6 @@ style_cache = {}
 #rules = []
 
 pattern = r'([A-Za-z]+)([0-9]+)'
-postgis = {
-    "type":"postgis",
-    "dbname":"osm",
-    "srid":900913,
-    "extent":box
-}
 
 # first collect all unique layers
 unique_layers = {}
@@ -69,7 +79,7 @@ for idx in ms.getLayerOrder():
         unique_layers[layer_name]['casing_rules'] = casing_rules
         unique_layers[layer_name]['text_rules'] = text_rules
         unique_layers[layer_name]['data'] = msl.data
-        mapnik_layer = utils.ms2layer(msl,layer_name)
+        mapnik_layer = utils.ms2layer(msl,layer_name,postgis)
         unique_layers[layer_name]['lyr'] = mapnik_layer
 
     for idx in range(0,msl.numclasses):

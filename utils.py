@@ -11,13 +11,6 @@ p_pattern = r'from (\w+)\W'
 t_pattern = r'geometry from \((.*)\)'
 
 
-postgis = {
-    "type":"postgis",
-    "dbname":"osm",
-    "srid":900913,
-    "extent":box
-}
-
 def copy_layer(obj):
     lyr = mapnik.Layer(obj.name)
     lyr.abstract = obj.abstract
@@ -51,8 +44,9 @@ def ms2text(rule_name,msl,msc):
     text = mapnik.TextSymbolizer(expr,'DejaVu Sans Book',size,color)
     if msl.type == mapscript.MS_LAYER_LINE:
         text.label_placement = mapnik.label_placement.LINE_PLACEMENT
-        text.minimum_distance = 500
-        text.label_spacing = 750
+        text.minimum_distance = 100
+        text.label_position_tolerance = 1
+        text.minimum_path_length = 96
     else:
         text.wrap_width = 15
         text.minimum_distance = 100
@@ -214,7 +208,7 @@ def ms2rule(rule_name,ms,msl,msc,casing=False):
 
         
  
-def ms2layer(msl,layer_name):
+def ms2layer(msl,layer_name,postgis):
     srs = msl.getProjection() or merc
     if srs == '+init=epsg:900913':
         srs = merc

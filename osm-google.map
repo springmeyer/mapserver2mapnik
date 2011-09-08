@@ -9,7 +9,7 @@ IMAGECOLOR 153 179 204
 WEB
    METADATA
       "ows_enable_request" "*"
-      "ows_srs" "EPSG:900913 EPSG:4326 EPSG:3857 EPSG:2154 EPSG:310642901 EPSG:4171 EPSG:310024802 EPSG:310915814 EPSG:310486805 EPSG:310702807 EPSG:310700806 EPSG:310547809 EPSG:310706808 EPSG:310642810 EPSG:310642801 EPSG:310642812 EPSG:310032811 EPSG:310642813 EPSG:2986"
+      "ows_srs" "EPSG:3857 EPSG:4326 EPSG:3857 EPSG:2154 EPSG:310642901 EPSG:4171 EPSG:310024802 EPSG:310915814 EPSG:310486805 EPSG:310702807 EPSG:310700806 EPSG:310547809 EPSG:310706808 EPSG:310642810 EPSG:310642801 EPSG:310642812 EPSG:310032811 EPSG:310642813 EPSG:2986"
       "labelcache_map_edge_buffer" "-10"
       "ows_title"               "MapServer benchmarking with OpenStreetMap data for Colorado"
       "ows_onlineresource"      "http://12.189.158.78:8081/cgi-bin/mapserv6?MAP=/benchmarking/wms/2011/mapserver/osm-google.map"
@@ -28,7 +28,7 @@ DEBUG 1
 CONFIG "MS_ERRORFILE" "stderr"
 CONFIG "PROJ_LIB" "/Library/Frameworks/PROJ.framework/Resources/proj/"
 PROJECTION
-   "init=epsg:900913"
+   "init=epsg:3857"
 END
 LAYER
    TYPE POLYGON
@@ -74,7 +74,7 @@ LAYER
    NAME "places0"
    MINSCALEDENOM 332808204
    MAXSCALEDENOM 99999999999
-   DATA "geometry from (select * from osm_places where type in ('country','continent') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -138,7 +138,7 @@ LAYER
    NAME "places1"
    MINSCALEDENOM 166404102
    MAXSCALEDENOM 332808204
-   DATA "geometry from (select * from osm_places where type in ('country','continent') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -202,7 +202,7 @@ LAYER
    NAME "places2"
    MINSCALEDENOM 83202051
    MAXSCALEDENOM 166404102
-   DATA "geometry from (select * from osm_places where type in ('country','continent') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -246,7 +246,7 @@ LAYER
    DEBUG 1
    NAME "land3"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 41601025
    MAXSCALEDENOM 83202051
@@ -284,7 +284,7 @@ LAYER
    NAME "places3"
    MINSCALEDENOM 41601025
    MAXSCALEDENOM 83202051
-   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -337,7 +337,7 @@ LAYER
    DEBUG 1
    NAME "land4"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 20800512
    MAXSCALEDENOM 41601025
@@ -352,13 +352,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse4"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','residential')      order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','residential')      order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 41601025
@@ -424,13 +424,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas4"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 41601025
    MINSCALEDENOM 20800512
@@ -445,13 +445,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea4"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 41601025
     MINSCALEDENOM 20800512
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -496,7 +496,7 @@ LAYER
    NAME "places4"
    MINSCALEDENOM 20800512
    MAXSCALEDENOM 41601025
-   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -549,7 +549,7 @@ LAYER
    DEBUG 1
    NAME "land5"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 10400256
    MAXSCALEDENOM 20800512
@@ -564,13 +564,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse5"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','residential')      order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','residential')      order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 20800512
@@ -636,13 +636,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas5"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 20800512
    MINSCALEDENOM 10400256
@@ -657,13 +657,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea5"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 20800512
     MINSCALEDENOM 10400256
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -690,7 +690,7 @@ LAYER
     NAME "roads5"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen0 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen0 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -737,7 +737,7 @@ LAYER
    NAME "places5"
    MINSCALEDENOM 10400256
    MAXSCALEDENOM 20800512
-   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -790,7 +790,7 @@ LAYER
    DEBUG 1
    NAME "land6"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 5200128
    MAXSCALEDENOM 10400256
@@ -805,13 +805,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse6"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','industrial','commercial','residential')      order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','industrial','commercial','residential')      order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 10400256
@@ -877,13 +877,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas6"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 10400256
    MINSCALEDENOM 5200128
@@ -898,13 +898,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea6"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 10400256
     MINSCALEDENOM 5200128
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -939,17 +939,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways6"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 10400256
     MINSCALEDENOM 5200128
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -997,7 +998,7 @@ LAYER
     NAME "roads6"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -1049,7 +1050,7 @@ LAYER
    NAME "places6"
    MINSCALEDENOM 5200128
    MAXSCALEDENOM 10400256
-   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -1102,7 +1103,7 @@ LAYER
    DEBUG 1
    NAME "land7"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 2600064
    MAXSCALEDENOM 5200128
@@ -1117,13 +1118,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse7"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','industrial','commercial','residential')      order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','industrial','commercial','residential')      order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 5200128
@@ -1189,13 +1190,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas7"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 5200128
    MINSCALEDENOM 2600064
@@ -1210,13 +1211,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea7"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 5200128
     MINSCALEDENOM 2600064
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -1251,17 +1252,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways7"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 5200128
     MINSCALEDENOM 2600064
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -1309,7 +1311,7 @@ LAYER
     NAME "roads7"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -1371,7 +1373,7 @@ LAYER
    NAME "places7"
    MINSCALEDENOM 2600064
    MAXSCALEDENOM 5200128
-   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('country','continent','city') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -1424,7 +1426,7 @@ LAYER
    DEBUG 1
    NAME "land8"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 1300032
    MAXSCALEDENOM 2600064
@@ -1439,13 +1441,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse8"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','industrial','commercial','residential')      order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','industrial','commercial','residential')      order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 2600064
@@ -1511,13 +1513,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas8"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 2600064
    MINSCALEDENOM 1300032
@@ -1532,13 +1534,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea8"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 2600064
     MINSCALEDENOM 1300032
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -1573,17 +1575,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways8"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 2600064
     MINSCALEDENOM 1300032
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -1631,7 +1634,7 @@ LAYER
     MAXSCALEDENOM 2600064
     TYPE LINE
     NAME "railways8"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -1660,7 +1663,7 @@ LAYER
     NAME "roads8"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -1729,7 +1732,7 @@ LAYER
    NAME "places8"
    MINSCALEDENOM 1300032
    MAXSCALEDENOM 2600064
-   DATA "geometry from (select * from osm_places where type in ('city','town') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('city','town') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -1789,7 +1792,7 @@ LAYER
    DEBUG 1
    NAME "land9"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 650016
    MAXSCALEDENOM 1300032
@@ -1804,13 +1807,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse9"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 1300032
@@ -1876,13 +1879,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas9"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 1300032
    MINSCALEDENOM 650016
@@ -1897,13 +1900,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea9"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 1300032
     MINSCALEDENOM 650016
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -1938,17 +1941,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways9"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways where type='river') as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 1300032
     MINSCALEDENOM 650016
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -1996,7 +2000,7 @@ LAYER
     MAXSCALEDENOM 1300032
     TYPE LINE
     NAME "railways9"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -2025,7 +2029,7 @@ LAYER
     NAME "roads9"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -2130,7 +2134,7 @@ LAYER
    NAME "places9"
    MINSCALEDENOM 650016
    MAXSCALEDENOM 1300032
-   DATA "geometry from (select * from osm_places where type in ('city','town') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('city','town') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -2190,7 +2194,7 @@ LAYER
    DEBUG 1
    NAME "land10"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 325008
    MAXSCALEDENOM 650016
@@ -2205,13 +2209,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse10"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 650016
@@ -2277,13 +2281,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas10"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 650016
    MINSCALEDENOM 325008
@@ -2298,13 +2302,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea10"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 650016
     MINSCALEDENOM 325008
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -2339,17 +2343,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways10"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 650016
     MINSCALEDENOM 325008
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -2411,7 +2416,7 @@ LAYER
     MAXSCALEDENOM 650016
     TYPE LINE
     NAME "railways10"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -2440,7 +2445,7 @@ LAYER
     NAME "roads10"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -2557,7 +2562,7 @@ LAYER
     NAME "aeroways10"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -2614,7 +2619,7 @@ LAYER
    NAME "places10"
    MINSCALEDENOM 325008
    MAXSCALEDENOM 650016
-   DATA "geometry from (select * from osm_places where type in ('city','town') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('city','town') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -2668,7 +2673,7 @@ LAYER
    DEBUG 1
    NAME "land11"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 162504
    MAXSCALEDENOM 325008
@@ -2683,13 +2688,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse11"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 325008
@@ -2786,13 +2791,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas11"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 325008
    MINSCALEDENOM 162504
@@ -2807,13 +2812,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea11"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 325008
     MINSCALEDENOM 162504
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -2848,17 +2853,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways11"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 325008
     MINSCALEDENOM 162504
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -2920,7 +2926,7 @@ LAYER
     MAXSCALEDENOM 325008
     TYPE LINE
     NAME "railways11"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways_gen1 where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -2949,7 +2955,7 @@ LAYER
     NAME "roads11"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -3073,7 +3079,7 @@ LAYER
     NAME "aeroways11"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -3130,7 +3136,7 @@ LAYER
    NAME "places11"
    MINSCALEDENOM 162504
    MAXSCALEDENOM 325008
-   DATA "geometry from (select * from osm_places where type in ('city','town','village') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('city','town','village') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -3208,7 +3214,7 @@ LAYER
    DEBUG 1
    NAME "land12"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 81252
    MAXSCALEDENOM 162504
@@ -3223,13 +3229,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse12"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 162504
@@ -3425,13 +3431,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas12"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 162504
    MINSCALEDENOM 81252
@@ -3446,13 +3452,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea12"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 162504
     MINSCALEDENOM 81252
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -3487,17 +3493,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways12"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 162504
     MINSCALEDENOM 81252
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -3573,7 +3580,7 @@ LAYER
     MAXSCALEDENOM 162504
     TYPE LINE
     NAME "railways12"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -3602,7 +3609,7 @@ LAYER
     NAME "roads12"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -3746,7 +3753,7 @@ LAYER
     NAME "aeroways12"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -3803,7 +3810,7 @@ LAYER
    NAME "places12"
    MINSCALEDENOM 81252
    MAXSCALEDENOM 162504
-   DATA "geometry from (select * from osm_places where type in ('city','town','village') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where type in ('city','town','village') and name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -3875,7 +3882,7 @@ LAYER
    DEBUG 1
    NAME "land13"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 40626
    MAXSCALEDENOM 81252
@@ -3890,13 +3897,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse13"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 81252
@@ -4092,13 +4099,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas13"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 81252
    MINSCALEDENOM 40626
@@ -4113,13 +4120,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea13"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 81252
     MINSCALEDENOM 40626
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -4154,17 +4161,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways13"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 81252
     MINSCALEDENOM 40626
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -4240,7 +4248,7 @@ LAYER
     MAXSCALEDENOM 81252
     TYPE LINE
     NAME "railways13"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -4269,7 +4277,7 @@ LAYER
     NAME "roads13"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -4444,7 +4452,7 @@ LAYER
     NAME "aeroways13"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -4501,7 +4509,7 @@ LAYER
    NAME "places13"
    MINSCALEDENOM 40626
    MAXSCALEDENOM 81252
-   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -4591,7 +4599,7 @@ LAYER
    DEBUG 1
    NAME "land14"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 20313
    MAXSCALEDENOM 40626
@@ -4606,13 +4614,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse14"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 40626
@@ -4808,13 +4816,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas14"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 40626
    MINSCALEDENOM 20313
@@ -4829,13 +4837,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea14"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 40626
     MINSCALEDENOM 20313
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -4870,17 +4878,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways14"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 40626
     MINSCALEDENOM 20313
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -4956,7 +4965,7 @@ LAYER
     MAXSCALEDENOM 40626
     TYPE LINE
     NAME "railways14"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -4985,7 +4994,7 @@ LAYER
     NAME "roads14"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -5364,7 +5373,7 @@ LAYER
     NAME "aeroways14"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -5421,7 +5430,7 @@ LAYER
    NAME "places14"
    MINSCALEDENOM 20313
    MAXSCALEDENOM 40626
-   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -5505,7 +5514,7 @@ LAYER
    DEBUG 1
    NAME "land15"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 10156
    MAXSCALEDENOM 20313
@@ -5520,13 +5529,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse15"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 20313
@@ -5722,13 +5731,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas15"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 20313
    MINSCALEDENOM 10156
@@ -5743,13 +5752,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea15"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 20313
     MINSCALEDENOM 10156
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -5784,17 +5793,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways15"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 20313
     MINSCALEDENOM 10156
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -5870,7 +5880,7 @@ LAYER
     MAXSCALEDENOM 20313
     TYPE LINE
     NAME "railways15"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -5899,7 +5909,7 @@ LAYER
     NAME "roads15"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -6338,7 +6348,7 @@ LAYER
     NAME "aeroways15"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -6395,7 +6405,7 @@ LAYER
    NAME "places15"
    MINSCALEDENOM 10156
    MAXSCALEDENOM 20313
-   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -6479,7 +6489,7 @@ LAYER
    DEBUG 1
    NAME "land16"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 5078
    MAXSCALEDENOM 10156
@@ -6494,13 +6504,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse16"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 10156
@@ -6696,13 +6706,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas16"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 10156
    MINSCALEDENOM 5078
@@ -6717,13 +6727,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea16"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 10156
     MINSCALEDENOM 5078
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -6758,17 +6768,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways16"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 10156
     MINSCALEDENOM 5078
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -6844,7 +6855,7 @@ LAYER
     MAXSCALEDENOM 10156
     TYPE LINE
     NAME "railways16"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -6873,7 +6884,7 @@ LAYER
     NAME "roads16"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -7312,7 +7323,7 @@ LAYER
     NAME "aeroways16"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -7369,7 +7380,7 @@ LAYER
    NAME "places16"
    MINSCALEDENOM 5078
    MAXSCALEDENOM 10156
-   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -7435,7 +7446,7 @@ LAYER
    DEBUG 1
    NAME "land17"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 2539
    MAXSCALEDENOM 5078
@@ -7450,13 +7461,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse17"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 5078
@@ -7652,13 +7663,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas17"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 5078
    MINSCALEDENOM 2539
@@ -7673,13 +7684,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea17"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 5078
     MINSCALEDENOM 2539
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -7714,17 +7725,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways17"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 5078
     MINSCALEDENOM 2539
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -7800,7 +7812,7 @@ LAYER
     MAXSCALEDENOM 5078
     TYPE LINE
     NAME "railways17"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -7829,7 +7841,7 @@ LAYER
     NAME "roads17"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -8268,7 +8280,7 @@ LAYER
     NAME "aeroways17"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -8325,7 +8337,7 @@ LAYER
    NAME "places17"
    MINSCALEDENOM 2539
    MAXSCALEDENOM 5078
-   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS
@@ -8391,7 +8403,7 @@ LAYER
    DEBUG 1
    NAME "land18"
    PROJECTION
-       "+init=epsg:900913"
+       "+init=epsg:3857"
    END
    MINSCALEDENOM 0
    MAXSCALEDENOM 2539
@@ -8406,13 +8418,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "landuse18"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry ,osm_id, type, name from osm_landusages       where type in ('forest','pedestrian','cemetery','industrial','commercial',      'brownfield','residential','school','college','university',      'military','park','golf_course','hospital','parking','stadium','sports_center',      'pitch') order by area desc) as foo using unique osm_id using srid=3857"
     PROCESSING "LABEL_NO_CLIP=ON"
     PROCESSING "CLOSE_CONNECTION=DEFER"
     MAXSCALEDENOM 2539
@@ -8608,13 +8620,13 @@ LAYER
    TYPE POLYGON
    STATUS ON
    PROJECTION
-       "init=epsg:900913"
+       "init=epsg:3857"
    END
    NAME "transport_areas18"
    GROUP "default"
    CONNECTIONTYPE POSTGIS
    CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-   DATA "geometry from osm_transport_areas using unique osm_id using srid=900913"
+   DATA "geometry from osm_transport_areas using unique osm_id using srid=3857"
    PROCESSING "CLOSE_CONNECTION=DEFER"
    MAXSCALEDENOM 2539
    MINSCALEDENOM 0
@@ -8629,13 +8641,13 @@ LAYER
     TYPE POLYGON
     STATUS ON
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     NAME "waterarea18"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry,osm_id ,name,type from osm_waterareas) as foo using unique osm_id using srid=3857"
     MAXSCALEDENOM 2539
     MINSCALEDENOM 0
     PROCESSING "CLOSE_CONNECTION=DEFER"
@@ -8670,17 +8682,18 @@ LAYER
 END
 LAYER
     TYPE LINE
+    STATUS ON
     NAME "waterways18"
     GROUP "default"
     CONNECTIONTYPE POSTGIS
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type, name from osm_waterways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     MAXSCALEDENOM 2539
     MINSCALEDENOM 0
     LABELITEM "name"
     PROJECTION
-        "init=epsg:900913"
+        "init=epsg:3857"
     END
     PROCESSING "CLOSE_CONNECTION=DEFER"
     CLASS
@@ -8756,7 +8769,7 @@ LAYER
     MAXSCALEDENOM 2539
     TYPE LINE
     NAME "railways18"
-    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, tunnel from osm_railways where type='rail') as foo using unique osm_id using srid=3857"
     CLASS
       EXPRESSION ([tunnel]=0)
         STYLE
@@ -8785,7 +8798,7 @@ LAYER
     NAME "roads18"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as foo using unique osm_id using srid=3857"
     LABELITEM "name"
     CLASSITEM "type"
     CLASS
@@ -9224,7 +9237,7 @@ LAYER
     NAME "aeroways18"
     CONNECTIONTYPE postgis
     CONNECTION "host=localhost dbname=osm user=postgres password=postgres port=5432"
-    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=900913"
+    DATA "geometry from (select geometry, osm_id, type from osm_aeroways) as foo using unique osm_id using srid=3857"
     CLASSITEM "type"
     CLASS
       EXPRESSION "runway"
@@ -9281,7 +9294,7 @@ LAYER
    NAME "places18"
    MINSCALEDENOM 0
    MAXSCALEDENOM 2539
-   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=900913"
+   DATA "geometry from (select * from osm_places where name is not NULL order by population asc nulls first) as foo using unique osm_id using srid=3857"
    LABELITEM 'name'
    CLASSITEM 'type'
     CLASS

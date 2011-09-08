@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="rgb(153,179,204)" maximum-extent="-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="rgb(153,179,204)" maximum-extent="-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237">
     <Style name="aeroways_19_shape" filter-mode="first">
         <Rule name="aeroways10_class0">
             <Filter>([type]=&apos;runway&apos;)</Filter>
@@ -2396,37 +2396,37 @@
         <Rule name="roads6_class0_label">
             <MinScaleDenominator>5200128</MinScaleDenominator>
             <MaxScaleDenominator>10400256</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads6_class1_label">
             <MinScaleDenominator>5200128</MinScaleDenominator>
             <MaxScaleDenominator>10400256</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads7_class0_label">
             <MinScaleDenominator>2600064</MinScaleDenominator>
             <MaxScaleDenominator>5200128</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads7_class1_label">
             <MinScaleDenominator>2600064</MinScaleDenominator>
             <MaxScaleDenominator>5200128</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads8_class0_label">
             <MinScaleDenominator>1300032</MinScaleDenominator>
             <MaxScaleDenominator>2600064</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads8_class1_label">
             <MinScaleDenominator>1300032</MinScaleDenominator>
             <MaxScaleDenominator>2600064</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads8_class2_label">
             <MinScaleDenominator>1300032</MinScaleDenominator>
             <MaxScaleDenominator>2600064</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
     </Style>
     <Style name="roads_17_shape" filter-mode="first">
@@ -4248,874 +4248,874 @@
         <Rule name="roads9_class0_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads9_class1_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads9_class2_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads9_class3_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads9_class4_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads9_class5_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads10_class0_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads10_class1_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads10_class2_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads10_class3_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads10_class4_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads10_class5_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads10_class6_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class0_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class1_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class2_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class3_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class4_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class5_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class6_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads11_class7_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class0_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class1_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class2_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class3_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class4_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class5_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class6_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class7_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class8_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads12_class9_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class0_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class1_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class2_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class3_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class4_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class5_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class6_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class7_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class8_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads13_class9_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class0_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class1_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class2_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class3_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class4_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class5_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class6_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class7_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class8_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class9_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class10_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class11_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class12_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class13_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class14_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class15_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class16_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class17_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class18_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class19_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class20_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class21_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class22_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class23_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class24_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class25_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads14_class26_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class0_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class1_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class2_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class3_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class4_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class5_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class6_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class7_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class8_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class9_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class10_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class11_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class12_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class13_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class14_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class15_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class16_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class17_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class18_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class19_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class20_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class21_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class22_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class23_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class24_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class25_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class26_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads15_class27_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class0_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class1_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class2_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class3_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class4_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class5_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class6_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class7_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class8_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class9_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class10_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class11_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class12_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class13_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class14_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class15_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class16_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class17_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class18_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class19_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class20_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class21_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class22_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class23_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class24_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class25_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class26_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads16_class27_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class0_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class1_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class2_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class3_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class4_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class5_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class6_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class7_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class8_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class9_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class10_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class11_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class12_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class13_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class14_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class15_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class16_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class17_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class18_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class19_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class20_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class21_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class22_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class23_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class24_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class25_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class26_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads17_class27_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class0_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class1_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class2_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class3_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class4_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class5_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class6_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class7_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class8_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class9_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class10_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class11_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class12_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class13_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class14_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class15_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class16_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class17_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class18_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class19_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(85,85,85)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class20_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class21_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class22_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class23_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class24_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class25_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class26_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads18_class27_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(51,51,51)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
     </Style>
     <Style name="roads_9_shape" filter-mode="first">
@@ -5136,12 +5136,12 @@
         <Rule name="roads5_class0_label">
             <MinScaleDenominator>10400256</MinScaleDenominator>
             <MaxScaleDenominator>20800512</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="roads5_class1_label">
             <MinScaleDenominator>10400256</MinScaleDenominator>
             <MaxScaleDenominator>20800512</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
     </Style>
     <Style name="waterarea_8_shape" filter-mode="first">
@@ -5537,62 +5537,62 @@
         <Rule name="waterways6_class0_label">
             <MinScaleDenominator>5200128</MinScaleDenominator>
             <MaxScaleDenominator>10400256</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways6_class1_label">
             <MinScaleDenominator>5200128</MinScaleDenominator>
             <MaxScaleDenominator>10400256</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways6_class2_label">
             <MinScaleDenominator>5200128</MinScaleDenominator>
             <MaxScaleDenominator>10400256</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways7_class0_label">
             <MinScaleDenominator>2600064</MinScaleDenominator>
             <MaxScaleDenominator>5200128</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways7_class1_label">
             <MinScaleDenominator>2600064</MinScaleDenominator>
             <MaxScaleDenominator>5200128</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways7_class2_label">
             <MinScaleDenominator>2600064</MinScaleDenominator>
             <MaxScaleDenominator>5200128</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways8_class0_label">
             <MinScaleDenominator>1300032</MinScaleDenominator>
             <MaxScaleDenominator>2600064</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways8_class1_label">
             <MinScaleDenominator>1300032</MinScaleDenominator>
             <MaxScaleDenominator>2600064</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways8_class2_label">
             <MinScaleDenominator>1300032</MinScaleDenominator>
             <MaxScaleDenominator>2600064</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways9_class0_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways9_class1_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways9_class2_label">
             <MinScaleDenominator>650016</MinScaleDenominator>
             <MaxScaleDenominator>1300032</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
     </Style>
     <Style name="waterways_18_shape" filter-mode="first">
@@ -5760,134 +5760,134 @@
         <Rule name="waterways10_class0_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways10_class1_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways10_class2_label">
             <MinScaleDenominator>325008</MinScaleDenominator>
             <MaxScaleDenominator>650016</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways11_class0_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways11_class1_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="13" fill="rgb(0,0,0)" placement="line" halo-radius="1" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways11_class2_label">
             <MinScaleDenominator>162504</MinScaleDenominator>
             <MaxScaleDenominator>325008</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways12_class0_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways12_class1_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways12_class2_label">
             <MinScaleDenominator>81252</MinScaleDenominator>
             <MaxScaleDenominator>162504</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways13_class0_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways13_class1_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways13_class2_label">
             <MinScaleDenominator>40626</MinScaleDenominator>
             <MaxScaleDenominator>81252</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways14_class0_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways14_class1_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways14_class2_label">
             <MinScaleDenominator>20313</MinScaleDenominator>
             <MaxScaleDenominator>40626</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways15_class0_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways15_class1_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways15_class2_label">
             <MinScaleDenominator>10156</MinScaleDenominator>
             <MaxScaleDenominator>20313</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways16_class0_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways16_class1_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways16_class2_label">
             <MinScaleDenominator>5078</MinScaleDenominator>
             <MaxScaleDenominator>10156</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways17_class0_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways17_class1_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways17_class2_label">
             <MinScaleDenominator>2539</MinScaleDenominator>
             <MaxScaleDenominator>5078</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways18_class0_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways18_class1_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
         <Rule name="waterways18_class2_label">
             <MaxScaleDenominator>2539</MaxScaleDenominator>
-            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" spacing="750" minimum-distance="500" avoid-edges="true"/>
+            <TextSymbolizer name="[name]" face-name="DejaVu Sans Book" size="12" fill="rgb(107,148,176)" placement="line" halo-radius="2" label-position-tolerance="1" minimum-distance="100" minimum-path-length="96" avoid-edges="true"/>
         </Rule>
     </Style>
     <Layer name="land_1" srs="+init=epsg:4326">
@@ -5904,41 +5904,44 @@
             <Parameter name="type">shape</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="land_4" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="land_4" srs="+init=epsg:3857">
         <StyleName>land_4_shape</StyleName>
         <Datasource>
             <Parameter name="file">data/shoreline_300</Parameter>
             <Parameter name="type">shape</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="landuse_6" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="landuse_6" srs="+init=epsg:3857">
         <StyleName>landuse_6_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_landusages</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry ,osm_id, type, name from osm_landusages       where type in (&apos;forest&apos;,&apos;residential&apos;)      order by area desc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="areas_7" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="areas_7" srs="+init=epsg:3857">
         <StyleName>areas_7_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_transport_areas</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">osm_transport_areas</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="waterarea_8" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="waterarea_8" srs="+init=epsg:3857">
         <StyleName>waterarea_8_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_waterareas</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry,osm_id ,name,type from osm_waterareas) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -5948,30 +5951,33 @@
         <StyleName>roads_9_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_roads_gen0</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen0 order by z_order asc, st_length(geometry) asc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="landuse_10" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="landuse_10" srs="+init=epsg:3857">
         <StyleName>landuse_10_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_landusages</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry ,osm_id, type, name from osm_landusages       where type in (&apos;forest&apos;,&apos;industrial&apos;,&apos;commercial&apos;,&apos;residential&apos;)      order by area desc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="waterways_11" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="waterways_11" srs="+init=epsg:3857">
         <StyleName>waterways_11_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_waterways</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry, osm_id, type, name from osm_waterways where type=&apos;river&apos;) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -5982,14 +5988,15 @@
         <StyleName>roads_12_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_roads_gen1</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="land_13" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="land_13" srs="+init=epsg:3857">
         <StyleName>land_13_shape</StyleName>
         <Datasource>
             <Parameter name="file">data/processed_p</Parameter>
@@ -6000,19 +6007,21 @@
         <StyleName>railways_14_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_railways_gen1</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry, osm_id, tunnel from osm_railways_gen1 where type=&apos;rail&apos;) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="landuse_16" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="landuse_16" srs="+init=epsg:3857">
         <StyleName>landuse_16_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_landusages</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry ,osm_id, type, name from osm_landusages       where type in (&apos;forest&apos;,&apos;pedestrian&apos;,&apos;cemetery&apos;,&apos;industrial&apos;,&apos;commercial&apos;,      &apos;brownfield&apos;,&apos;residential&apos;,&apos;school&apos;,&apos;college&apos;,&apos;university&apos;,      &apos;military&apos;,&apos;park&apos;,&apos;golf_course&apos;,&apos;hospital&apos;,&apos;parking&apos;,&apos;stadium&apos;,&apos;sports_center&apos;,      &apos;pitch&apos;) order by area desc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6023,19 +6032,21 @@
         <StyleName>roads_17_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_roads</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="waterways_18" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="waterways_18" srs="+init=epsg:3857">
         <StyleName>waterways_18_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_waterways</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry, osm_id, type, name from osm_waterways) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6045,8 +6056,9 @@
         <StyleName>aeroways_19_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_aeroways</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry, osm_id, type from osm_aeroways) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6056,8 +6068,9 @@
         <StyleName>railways_21_shape</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_railways</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry, osm_id, tunnel from osm_railways where type=&apos;rail&apos;) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6067,8 +6080,9 @@
         <StyleName>places_3_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_places</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select * from osm_places where type in (&apos;country&apos;,&apos;continent&apos;) and name is not NULL order by population asc nulls first) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6078,41 +6092,45 @@
         <StyleName>places_5_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_places</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select * from osm_places where type in (&apos;country&apos;,&apos;continent&apos;,&apos;city&apos;) and name is not NULL order by population asc nulls first) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="landuse_6" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="landuse_6" srs="+init=epsg:3857">
         <StyleName>landuse_6_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_landusages</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry ,osm_id, type, name from osm_landusages       where type in (&apos;forest&apos;,&apos;residential&apos;)      order by area desc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="areas_7" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="areas_7" srs="+init=epsg:3857">
         <StyleName>areas_7_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_transport_areas</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">osm_transport_areas</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="waterarea_8" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="waterarea_8" srs="+init=epsg:3857">
         <StyleName>waterarea_8_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_waterareas</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry,osm_id ,name,type from osm_waterareas) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6122,30 +6140,33 @@
         <StyleName>roads_9_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_roads_gen0</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen0 order by z_order asc, st_length(geometry) asc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="landuse_10" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="landuse_10" srs="+init=epsg:3857">
         <StyleName>landuse_10_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_landusages</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry ,osm_id, type, name from osm_landusages       where type in (&apos;forest&apos;,&apos;industrial&apos;,&apos;commercial&apos;,&apos;residential&apos;)      order by area desc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="waterways_11" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="waterways_11" srs="+init=epsg:3857">
         <StyleName>waterways_11_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_waterways</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry, osm_id, type, name from osm_waterways where type=&apos;river&apos;) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6155,8 +6176,9 @@
         <StyleName>roads_12_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_roads_gen1</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads_gen1 order by z_order asc, st_length(geometry) asc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6166,19 +6188,21 @@
         <StyleName>places_15_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_places</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select * from osm_places where type in (&apos;city&apos;,&apos;town&apos;) and name is not NULL order by population asc nulls first) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="landuse_16" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="landuse_16" srs="+init=epsg:3857">
         <StyleName>landuse_16_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_landusages</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry ,osm_id, type, name from osm_landusages       where type in (&apos;forest&apos;,&apos;pedestrian&apos;,&apos;cemetery&apos;,&apos;industrial&apos;,&apos;commercial&apos;,      &apos;brownfield&apos;,&apos;residential&apos;,&apos;school&apos;,&apos;college&apos;,&apos;university&apos;,      &apos;military&apos;,&apos;park&apos;,&apos;golf_course&apos;,&apos;hospital&apos;,&apos;parking&apos;,&apos;stadium&apos;,&apos;sports_center&apos;,      &apos;pitch&apos;) order by area desc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6188,19 +6212,21 @@
         <StyleName>roads_17_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_roads</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select osm_id,geometry,name,ref,type,tunnel,bridge from osm_roads order by z_order asc, st_length(geometry) asc) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
         </Datasource>
     </Layer>
-    <Layer name="waterways_18" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Layer name="waterways_18" srs="+init=epsg:3857">
         <StyleName>waterways_18_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_waterways</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select geometry, osm_id, type, name from osm_waterways) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6210,8 +6236,9 @@
         <StyleName>places_20_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_places</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select * from osm_places where type in (&apos;city&apos;,&apos;town&apos;,&apos;village&apos;) and name is not NULL order by population asc nulls first) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
@@ -6221,8 +6248,9 @@
         <StyleName>places_22_text</StyleName>
         <Datasource>
             <Parameter name="dbname">osm</Parameter>
-            <Parameter name="extent">-11690811.758434,4826833.1534376,-11687378.549609,4830266.3622626</Parameter>
+            <Parameter name="extent">-12197658.2353032,4354107.45296023,-11359191.3507561,5097334.13614237</Parameter>
             <Parameter name="geometry_table">osm_places</Parameter>
+            <Parameter name="max_size">33</Parameter>
             <Parameter name="srid">900913</Parameter>
             <Parameter name="table">(select * from osm_places where name is not NULL order by population asc nulls first) as t</Parameter>
             <Parameter name="type">postgis</Parameter>
